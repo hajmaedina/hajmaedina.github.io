@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  color: #444;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #2588c9;
+  text-decoration: none;
+}
+
+p,
+li {
+  line-height: 1.5;
+}
+
+ul {
+  padding: 0;
+}
+
+ol {
+  padding-left: 34px;
+}
+ul li::marker {
+  color: #2588c9;
+  font-size: 30px;
+  line-height: 0;
+}
+
+ol li::marker {
+  color: #fff;
+  font-weight: 500;
+}
+
+ol li {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+ol li::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  background-color: #2588c9;
+  top: 0;
+  left: -32px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ibarra Real Nova", serif;
+  color: #000;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.button,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2588c9;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1;
+}
+
+.beige {
+  background-color: #f2ede9;
+}
+
+.align-center {
+  text-align: center;
+}
+
+header {
+  margin-top: 20px;
+}
+
+header .content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  max-width: 400px;
+}
+
+#logo a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+#logo a > span:first-of-type {
+  width: 70px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+#logo a span {
+  display: block;
+}
+
+#menu ul {
+  display: flex;
+  list-style: none;
+}
+
+#menu ul li {
+  margin-left: 40px;
+}
+
+#menu ul li a {
+  color: inherit;
+  padding: 15px;
+}
+
+#menu ul li a:hover {
+  color: #2588c9;
+}
+
+#hero-txt {
+  max-width: 650px;
+  padding: 8vw 0 14vw 0;
+}
+
+#hero {
+  background: #f2f2f2 url(../img/hero-t.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+section:not(#hero) {
+  padding: 80px 0;
+}
+
+#contact-info img {
+  width: 27px;
+  vertical-align: middle;
+  padding-right: 7px;
+}
+#contact-info {
+  list-style: none;
+}
+
+#contact-info li {
+  margin-bottom: 10px;
+}
+
+#services img,
+#portfolio img {
+  border: solid 5px #f2ede9;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.cover-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#about img,
+#work img {
+  border: solid 5px #fff;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+#about ul {
+  padding-left: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #fff;
+  font-family: inherit;
+  padding: 10px;
+  border: solid 5px #f2ede9;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: inherit;
+  outline: none;
+}
+
+footer {
+  background-color: #2588c9;
+  color: #fff;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+footer ul a {
+  color: #fff;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 10px 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+  header .content-box {
+    display: block;
+  }
+
+  #logo {
+    margin: 0 auto;
+  }
+
+  #menu ul {
+    justify-content: center;
+  }
+
+  #hero-txt {
+    margin: 0 auto;
+    padding: 3vw 0 30vw 0;
+  }
+
+  #hero {
+    background-size: auto 60%;
+    background-position: bottom right -100px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  section:not(#hero) {
+    padding: 30px 0;
+  }
+
+  #menu ul, footer ul {
+    display: block;
+  }
+
+  footer ul li, #menu ul li {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  #hero {
+    background-size: auto 55%;
+    background-position: bottom right -150px;
+  }
+
+  #hero-txt {
+    margin: 0 auto;
+    padding: 3vw 0 50vw 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #hero-txt {
+    margin: 0 auto;
+    padding: 3vw 0 60vw 0;
+  }
+
+  #hero {
+    background-size: auto 45%;
+    background-position: bottom right -150px;
+  }
+}
