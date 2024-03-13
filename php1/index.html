@@ -19,14 +19,21 @@ error_reporting(E_ALL);
     <h2>1. feladat</h2>
     <?php 
     <!-- 1.
-Készíts egy PHP programot, amely kiszámolja egy termék árát az ÁFA-val együtt. Az ÁFA mértéke 27% legyen. A termék eredeti árát és az ÁFA-t tartalmazó árat írd ki a képernyőre.
-Készíts egy PHP programot, amely kiszámítja az egy weboldal átlagos oldalletöltési idejét. Tegyük fel, hogy rendelkezésre áll egy tömb, amely tárolja az egyes oldalletöltések idejét másodpercben.
+Készíts egy PHP programot, amely kiszámolja egy termék árát az ÁFA-val együtt. 
+Az ÁFA mértéke 27% legyen. A termék eredeti árát és az ÁFA-t tartalmazó árat írd ki a képernyőre.
+
+
+Készíts egy PHP programot, amely kiszámítja az egy weboldal átlagos oldalletöltési idejét. 
+Tegyük fel, hogy rendelkezésre áll egy tömb, amely tárolja az egyes oldalletöltések idejét másodpercben.
 Készíts egy PHP programot, amely kiszámítja egy webshop kosarában lévő termékek átlagárát.
 Laptop – 1000
 Telefon – 300
 Könyv – 20 -->
-    
-    fdsafafaadfga
+    $netto = 9000;
+    $afa = 27;
+    $brutto = ($netto * $afa) / 100;
+
+    echo 'a termék ára' . $brutto;    
     ?>
 
     <h2>2. feladat</h2>
