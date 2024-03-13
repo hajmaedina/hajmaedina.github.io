@@ -1,0 +1,46 @@
+<?php
+
+//hibakezelés
+ini_set('display_errors',1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP1</title>
+</head>
+<body>
+    
+    <h2>1. feladat</h2>
+    <?php 
+    <!-- 1.
+Készíts egy PHP programot, amely kiszámolja egy termék árát az ÁFA-val együtt. Az ÁFA mértéke 27% legyen. A termék eredeti árát és az ÁFA-t tartalmazó árat írd ki a képernyőre.
+Készíts egy PHP programot, amely kiszámítja az egy weboldal átlagos oldalletöltési idejét. Tegyük fel, hogy rendelkezésre áll egy tömb, amely tárolja az egyes oldalletöltések idejét másodpercben.
+Készíts egy PHP programot, amely kiszámítja egy webshop kosarában lévő termékek átlagárát.
+Laptop – 1000
+Telefon – 300
+Könyv – 20 -->
+    
+    fdsafafaadfga
+    ?>
+
+    <h2>2. feladat</h2>
+    <?php ?>
+
+    <h2>3. feladat</h2>
+    <?php ?>
+
+    <h2>4. feladat</h2>
+    <?php ?>
+
+    <h2>5. feladat</h2>
+    <?php ?>
+</body>
+</html>
+
+
